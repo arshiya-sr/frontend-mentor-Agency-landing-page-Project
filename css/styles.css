@@ -1,0 +1,19 @@
+/* header */
+
+
+
+/* main */
+
+
+
+/* footer */
+
+.footer {
+    font-size: var(--fs-sm);
+    text-align: center;
+    background-color: var(--Green-500);
+}
+
+.credit {
+    color: var(--White);
+}
