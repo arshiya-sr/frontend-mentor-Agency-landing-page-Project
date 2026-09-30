@@ -15,40 +15,52 @@
 </head>
 
 <body>
-  <header>
+  <header class="header">
+    <img class="background mobile" src="./images/mobile/image-header.jpg" alt="">
+
     <section class="top-section">
-      <img src="./images/logo.svg" alt=" " aria-hidden="true" class="logo">
-      <h1 class="sr-only">sunnyside</h1>
-      <nav class="navigation">
+      <div class="wrapper">
+        <img src="./images/logo.svg" alt="" aria-hidden="true" class="logo">
+        <h1 class="sr-only">sunnyside</h1>
+        <label class="menu-button">
+          <img class="button-icon" src="./images/icon-hamburger.svg" alt="">
+          <input class="checkbox" type="checkbox">
+        </label>
+      </div>
+
+      <nav class="navigation" aria-label="page header's main navigation">
+        <div aria-hidden="true" class="triangle"></div>
         <ul class="nav-list">
           <li><a href="#" class="link">About</a></li>
           <li><a href="#" class="link">Services</a></li>
           <li><a href="#" class="link">Projects</a></li>
-          <li><a href="#" class="link">Contact</a></li>
+          <li><a href="#" class="link cta">Contact</a></li>
         </ul>
       </nav>
     </section>
+
     <section class="hero">
       <strong class="hero-text"> We are creatives</strong>
-
-      <img src="./images/icon-arrow-down.svg" alt="">
-      <img src="./images/desktop/image-header.jpg" alt="">
+      <img class="arrow" src="./images/icon-arrow-down.svg" alt="">
     </section>
 
   </header>
   <main class="main">
     <section class="squares">
+      <h2 class="sr-only">Description about us</h2>
+
       <div class="square">
         <img src="./images/desktop/image-transform.jpg" alt="">
       </div>
 
       <div class="square">
-        Transform your brand
+        <h3 class="square-title">Transform your brand</h3>
+        <p class="square-desc">
+          We are a full-service creative agency specializing in helping brands grow fast.
+          Engage your clients through compelling visuals that do most of the marketing for you.
+        </p>
+        <a href="" class="cta-link">Learn more</a>
 
-        We are a full-service creative agency specializing in helping brands grow fast.
-        Engage your clients through compelling visuals that do most of the marketing for you.
-
-        Learn more
       </div>
 
       <div class="square">
@@ -56,49 +68,56 @@
       </div>
 
       <div class="square">
-        Stand out to the right audience
-
-        Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll
-        build
-        and extend your brand in digital places.
-
-        Learn more
+        <h3 class="square-title">Stand out to the right audience</h3>
+        <p class="square-desc">
+          Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll
+          build
+          and extend your brand in digital places.
+        </p>
+        <a href="" class="cta-link">Learn more</a>
       </div>
 
       <div class="square">
         <img src="./images/desktop/image-graphic-design.jpg" alt="">
-        Graphic design
-        Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential
-        clients’ attention.
+        <h3 class="square-title">Graphic design</h3>
+        <p class="square-desc">Great design makes you memorable. We deliver artwork that underscores your brand message
+          and captures potential
+          clients’ attention.</p>
       </div>
 
       <div class="square">
         <img src="./images/desktop/image-photography.jpg" alt="">
-        Photography
-        Increase your credibility by getting the most stunning, high-quality photos that improve your business image.
+        <h3 class="square-title">Photography</h3>
+        <p class="square-desc">Increase your credibility by getting the most stunning, high-quality photos that improve
+          your business image.</p>
       </div>
 
     </section>
     <section class="comments">
-      Client testimonials
+      <h2 class="section-title">Client testimonials</h2>
       <div class="comments">
         <div class="comment">
-          We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always
-          hit.
-          Emily R.
-          Marketing Director
+          <img src="./images/image-emily.jpg" alt="" class="commentor-image">
+          <p class="commentor-message">We put our trust in Sunnyside and they delivered, making sure our needs were met
+            and deadlines were always
+            hit.</p>
+          <h3 class="commentor name">Emily R.</h3>
+          <p class="commentor job">Marketing Director</p>
         </div>
         <div class="comment">
-          Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and
-          enjoyable
-          experience.
-          Thomas S.
-          Chief Operating Officer
+          <img src="./images/image-thomas.jpg" alt="" class="commentor-image">
+          <p class="commentor-message"> Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success
+            made it a satisfying and
+            enjoyable experience.</p>
+          <h3 class="commentor name">Thomas S.</h3>
+          <p class="commentor job">Chief Operating Officer</p>
         </div>
         <div class="comment">
-          Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!
-          Jennie F.
-          Business Owner
+          <img src="./images/image-jennie.jpg" alt="" class="commentor-image">
+          <p class="commentor-message">Incredible end result! Our sales increased over 400% when we worked with
+            Sunnyside. Highly recommended!</p>
+          <h3 class="commentor name">Jennie F.</h3>
+          <p class="commentor job"> Business Owner</p>
         </div>
       </div>
 
@@ -112,10 +131,46 @@
   </main>
 
   <footer class="footer">
-    About
-    Services
-    Projects
-    Contact
+    <nav aria-label="footer external navigation">
+      <ul>
+        <li>
+          <a href="#" class="link">About</a>
+        </li>
+        <li>
+          <a href="#" class="link">Services</a>
+        </li>
+        <li>
+          <a href="#" class="link">Projects</a>
+        </li>
+        <li>
+          <a href="#" class="link">Contact</a>
+        </li>
+      </ul>
+
+      <ul>
+        <li>
+          <a href="#" class="icon-link">
+            <img src="./images/icon-facebook.svg" alt="" class="icon">
+          </a>
+        </li>
+        <li>
+          <a href="#" class="icon-link">
+            <img src="./images/icon-instagram.svg" alt="" class="icon">
+          </a>
+        </li>
+        <li>
+          <a href="#" class="icon-link">
+            <img src="./images/icon-twitter.svg" alt="" class="icon">
+          </a>
+        </li>
+        <li>
+          <a href="#" class="icon-link">
+            <img src="./images/icon-pinterest.svg" alt="" class="icon">
+          </a>
+        </li>
+      </ul>
+    </nav>
+
     <p>Challenge by <a class="credit" rel="noopener noreferrer" target="_blank"
         href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.</p>
     <p>Coded by <a class="credit" rel="noopener noreferrer" target="_blank"

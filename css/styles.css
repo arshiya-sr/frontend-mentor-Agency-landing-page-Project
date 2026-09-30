@@ -1,6 +1,118 @@
 /* header */
 
+.header {
+    padding: var(--space-lg);
+    position: relative;
+    width: fit-content;
+    width: 100%;
+    min-height: 650px;
+    max-height: 900px;
+    aspect-ratio: 5 / 6;
+    display: flex;
+    flex-direction: column;
+}
 
+.background {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.top-section .wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu-button {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.checkbox {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+}
+
+.hero {
+    align-self: center;
+    margin-block-start: clamp(24%, 24% + 10vw, 50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-lg)
+}
+
+.hero-text {
+    font-size: var(--fs-3xl);
+    font-family: var(--font-heads);
+    color: var(--White);
+    width: 90%;
+    text-align: center;
+    line-height: var(--space-xxl);
+    text-transform: uppercase;
+    letter-spacing: var(--space-xs);
+}
+
+/* navigation */
+
+.navigation {
+    opacity: 0;
+    position: absolute;
+    z-index: 2;
+    background-color: var(--White);
+    width: 88%;
+    height: fit-content;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    top: 120px;
+    padding: var(--space-lg) 0 var(--space-xl);
+    transition: opacity 0.2s ease-in;
+}
+
+.header:has(.checkbox:checked) .navigation {
+    opacity: 1;
+}
+
+.nav-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-xl);
+}
+
+li {
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+    font-size: var(--fs-md);
+    color: var(--Grey-550)
+}
+
+.cta {
+    margin-block-start: var(--space-lg);
+    padding: var(--space-md) var(--space-xl);
+    background-color: var(--Yellow-500);
+    border-radius: var(--radius-huge);
+    color: var(--Black);
+    font-family: var(--font-heads)
+}
+
+.triangle {
+    position: absolute;
+    right: 0;
+    top: -40px;
+    border: 20px solid;
+    border-color: transparent var(--White) var(--White) transparent;
+}
 
 /* main */
 
