@@ -52,6 +52,7 @@
     --fw-light: 400;
     --fw-normal: 500;
     --fw-bold: 700;
+    --fw-dark: 900;
 
     /* Spacing scale (rem-based for consistency)
        Use a 8px baseline: 0.5rem (~8px), 1rem (~16px), 2rem (~32px) */
