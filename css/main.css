@@ -19,6 +19,8 @@
     --Grey-550: hsl(232, 10%, 55%);
     --Grey-400: hsl(210, 4%, 67%);
 
+    --footer-background: hsla(210, 4%, 67%, 0.7);
+
     --White: hsl(0, 100%, 100%);
     --Black: hsl(0, 0%, 0%);
     --White-light: hsla(0, 0%, 90%, 0.7);
