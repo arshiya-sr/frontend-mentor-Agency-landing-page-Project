@@ -12,6 +12,10 @@
     flex-direction: column;
 }
 
+.desktop {
+    display: none;
+}
+
 .background {
     position: absolute;
     inset: 0;
@@ -140,6 +144,10 @@ li {
     position: relative;
 }
 
+.img-container {
+    padding: 0;
+}
+
 .first {
     padding-top: 0;
 }
@@ -208,7 +216,7 @@ li {
 }
 
 .img-background {
-    aspect-ratio: 4 / 4;
+    aspect-ratio: 2 / 2;
     justify-content: flex-end;
 }
 
@@ -283,6 +291,10 @@ li {
     display: block;
 }
 
+.image.desktop {
+    display: none;
+}
+
 /* footer */
 
 .footer {
@@ -317,4 +329,25 @@ li {
 
 .credit {
     color: var(--White);
+}
+
+/* Desktop Layout */
+/* 48rem = 768px based on 16px defualt root HTML font size */
+@media screen and (min-width: 48rem) {
+    .mobile {
+        display: none;
+    }
+
+    .desktop {
+        display: block;
+    }
+
+    .squares {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat((3, 1fr));
+    }
+
+    .img-container img {
+        width: cover;
+    }
 }
