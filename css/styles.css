@@ -47,7 +47,7 @@
 
 .hero {
     align-self: center;
-    margin-block-start: clamp(24%, 24% + 10vw, 50%);
+    margin-block-start: clamp(24%, 24% + 6vw, 35%);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -349,5 +349,9 @@ li {
 
     .img-container img {
         width: cover;
+    }
+
+    .hero {
+        margin-block-start: clamp(15%, 15% + 3vw, 24%);
     }
 }
