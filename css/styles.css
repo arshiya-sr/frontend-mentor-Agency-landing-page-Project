@@ -324,7 +324,20 @@ li {
 }
 
 .footer .link {
-    color: var(--Green-500)
+    color: var(--Green-500);
+    transition: all 0.2s ease-in;
+}
+
+.footer .link:hover {
+    color: var(--White);
+}
+
+.icon {
+    transition: all 0.2s ease-in;
+}
+
+.icon:hover {
+    transform: scale(1.2) translateY(-10px);
 }
 
 .credit {

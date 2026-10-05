@@ -25,6 +25,8 @@
     --Black: hsl(0, 0%, 0%);
     --White-light: hsla(0, 0%, 90%, 0.7);
 
+    --Shadow: hsla(0, 0%, 0%, 0.6);
+
     /* Typography */
 
     --font-family: 'Barlow', sans-serif;
