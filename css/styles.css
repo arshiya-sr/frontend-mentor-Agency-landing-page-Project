@@ -24,6 +24,11 @@
     z-index: -1;
 }
 
+.top-section {
+    display: flex;
+    flex-direction: column;
+}
+
 .top-section .wrapper {
     display: flex;
     flex-direction: row;
@@ -353,6 +358,49 @@ li {
 
     .desktop {
         display: block;
+    }
+
+    .logo {
+        width: 200px;
+    }
+
+    .top-section {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .menu-button {
+        display: none;
+    }
+
+    .navigation {
+        opacity: 1;
+        position: static;
+        background-color: transparent;
+        width: auto;
+        height: auto;
+        transform: none;
+    }
+
+    .triangle {
+        display: none;
+    }
+
+    .nav-list {
+        flex-direction: row;
+    }
+
+    .nav-list .link {
+        color: var(--White)
+    }
+
+    .cta {
+        background-color: var(--White);
+    }
+
+    #cta {
+        color: var(--Black)
     }
 
     .squares {
