@@ -51,6 +51,8 @@
 }
 
 .hero {
+    width: 80%;
+    max-width: 1000px;
     align-self: center;
     margin-block-start: clamp(24%, 24% + 6vw, 35%);
     display: flex;
@@ -403,16 +405,49 @@ li {
         color: var(--Black)
     }
 
+    .hero {
+        margin-block-start: clamp(5%, 5% + 3vw, 10%);
+    }
+
     .squares {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat((3, 1fr));
+        grid-template-areas:
+            'transform egg'
+            'glass stand'
+            'graphic photography';
+    }
+
+    .egg {
+        grid-area: egg;
+    }
+
+    .transform {
+        grid-area: transform;
+    }
+
+    .glass {
+        grid-area: glass;
+    }
+
+    .stand {
+        grid-area: stand;
+    }
+
+    .graphic-design {
+        grid-area: graphic;
+    }
+
+    .photography {
+        grid-area: photography;
+    }
+
+    .egg img,
+    .glass img {
+        object-fit: cover;
     }
 
     .img-container img {
         width: cover;
-    }
-
-    .hero {
-        margin-block-start: clamp(15%, 15% + 3vw, 24%);
     }
 }
