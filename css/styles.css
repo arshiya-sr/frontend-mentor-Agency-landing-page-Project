@@ -107,7 +107,13 @@ li {
 .link {
     text-decoration: none;
     font-size: var(--fs-md);
-    color: var(--Grey-550)
+    color: var(--Grey-550);
+    transition: all 0.2s ease-in;
+}
+
+.link:hover,
+.link:focus {
+    color: var(--Black);
 }
 
 .cta {
@@ -116,7 +122,14 @@ li {
     background-color: var(--Yellow-500);
     border-radius: var(--radius-huge);
     color: var(--Black);
-    font-family: var(--font-heads)
+    font-family: var(--font-heads);
+    transition: all 0.2s ease-in;
+}
+
+.cta:hover,
+.cta:focus {
+    color: var(--White);
+    background-color: var(--Black)
 }
 
 .triangle {
@@ -255,6 +268,13 @@ li {
     font-family: var(--font-heads);
     letter-spacing: var(--space-xxs);
     text-transform: uppercase;
+    text-align: center;
+    transition: all 0.2s ease-in;
+}
+
+.section-title:hover,
+.section-title:focus {
+    color: var(--Black);
 }
 
 .comment {
@@ -266,6 +286,12 @@ li {
     width: 80px;
     border-radius: var(--radius-circle);
     margin-bottom: var(--space-lg);
+    transition: all 0.2s ease-in;
+}
+
+.commentor-image:hover {
+    transform: scale(1.05) translateY(-5px);
+    box-shadow: 5px 5px 10px var(--Shadow);
 }
 
 .commentor-message {
@@ -352,8 +378,8 @@ li {
 }
 
 /* Desktop Layout */
-/* 48rem = 768px based on 16px default root HTML font size */
-@media screen and (min-width: 48rem) {
+/* 54rem = 864px based on 16px default root HTML font size */
+@media screen and (min-width: 54rem) {
     /* Important */
 
     .mobile {
@@ -407,6 +433,11 @@ li {
 
     #cta {
         color: var(--Black);
+    }
+
+    #cta:hover,
+    #cta:focus {
+        color: var(--White)
     }
 
     .hero {
@@ -494,7 +525,6 @@ li {
     }
 
     .section-title {
-        text-align: center;
         margin-top: 10rem;
         margin-bottom: 6rem;
     }
